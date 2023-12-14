@@ -2,25 +2,131 @@
 body {
     display: flex;
     justify-content: center;
+    /* border: 1px solid black; */
+
 }
 
 .container {
-    /* border: 1px solid black; */
+    border: 1px dotted black;
     /* height: 100vh; */
     font-family: 'Poppins', sans-serif;
-    width: 1240px;
+    width: 80%;
 }
 
 .header { 
     display: flex;
-    justify-content: space-evenly;
+    justify-content:space-around ;
     
 } 
+
+.logo-rocket-div {
+    display: flex;
+    align-items: center;
+}
 
 .navigation-menu {
     display: flex;
     font-size: 23px;
     font-weight: 500;
+}
+
+/* ... Contact form styles ... */
+
+.contact-form-div {
+    height: 70%;
+    margin: 50px;
+    padding: 20px;
+    max-width: 380px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 20px;
+    /* background: radial-gradient(circle, rgba(166,166,166,1) 0%, rgba(148,187,233,0.21332282913165268) 100%); */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+
+
+.first-and-last-name {
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    gap: 10px;
+}
+
+.ffname, .llname {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+input {
+    height: 20px;
+}
+
+textarea {
+    height: 95px;
+}
+
+.contact-form-button {
+    height: 40px;
+    width: 100%;
+    background: radial-gradient(circle, rgba(166,166,166,1) 0%, rgba(148,187,233,0.21332282913165268) 100%);
+
+}
+
+input, textarea {
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.email-and-message {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+
+
+/* BANNER */
+.banner {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 20px;
+    /* border: 1px solid black; */
+
+}
+
+.banner-copy {
+    line-height: 3em;
+    margin: 50px;
+}
+
+
+.banner > h1, h2, p {
+    margin: 0;
+}
+
+.banner > div {
+    /* border: 1px solid black; */
+    width: 50%;
+}
+
+.banner h2 span {
+    color: #A6A6A6;
+}
+
+.banner h1 {
+    font-size: 1.5rem;
+}
+
+.banner h2 {
+    font-size: 3rem;
 }
 
 .testimonialsBannerColMain {
@@ -64,12 +170,12 @@ footer div {
 
 .testimonialsBannerSub {
     /* margin: 30px; */
-    height: 90%;
-    border: 1px solid #3B3937;
+    height: 95%;
+    border: 1px solid rgba(0, 0, 0, 1);
     padding: 20px;
     border-radius: 20px;
-    background: rgb(59,57,55);
-    background: linear-gradient(169deg, rgba(59,57,55,1) 0%, rgba(59,57,55,0) 35%, rgba(231,231,231,0) 100%);
+    background: rgb(166,166,166);
+    background: radial-gradient(circle, rgba(166,166,166,1) 0%, rgba(148,187,233,0.21332282913165268) 100%);
 }
 
 .logo {
@@ -81,11 +187,7 @@ footer div {
     justify-content:space-around;
     align-items: center;
     list-style: none;
-    margin: 0;
-    padding: 0;
-    gap: 25px;
-    
-    
+    gap: 20px;    
 }
 
 li {
@@ -98,7 +200,7 @@ a {
 }
 
 .testimonialsBannerSub:hover {
-    box-shadow: 10px 10px 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 
 }
@@ -107,16 +209,20 @@ a {
     border: 1px solid #3B3937;
     border-radius: 20px;
     font-weight: 600;
+    background: rgb(166,166,166);
+    background: radial-gradient(circle, rgba(166,166,166,1) 0%, rgba(148,187,233,0.21332282913165268) 100%);
 }
 
 .I:hover {
     border-bottom: 1px solid #3B3937;
-    padding: 10px;
-    font-weight: 600;
 }
 
 img {
     height: 50px;
+}
+
+.logo-rocket {
+    font-size: 50px;
 }
 
 a {
@@ -129,70 +235,7 @@ a:hover {
     text-decoration: none;
 }
 
-/* INTRO BANNER > INTRO TEXT */
-.intro-banner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-style: italic;
-    font-size: 16px;
-    height: 100px;
-    
 
-}
-
-.intro-text {
-    padding: 30px;
-    /* border: 1px solid #3B3937; */
-    /* border-radius: 20px;  */
-}
-
-.banner {
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    margin: 20px;
-    /* border: 1px solid black; */
-    
-}
-
-.banner-copy {
-    line-height: 3em;
-    margin: 50px;
-}
-
-
-.banner > h1, h2, p {
-    margin: 0;
-}
-
-.banner div {
-    /* border: 1px solid black; */
-    width: 530px;
-    
-}
-
-.ML {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 500px;
-    border-radius: 20px;
-}
-
-.banner h2 span {
-    color: #A6A6A6;
-}
-
-.banner h1 {
-    font-size: 1.5rem;
-}
-
-.banner h2 {
-    font-size: 3rem;
-}
 
 /* @media only screen and (max-width: 600px) {
     .header {

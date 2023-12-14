@@ -19,11 +19,14 @@
     <div class="container">
         <!-- HEADER -->
         <div class="header">
-            <img class="logo" src="media/ML--logo.svg" alt="">
+            <!-- <img class="logo" src="media/ML--logo.svg" alt=""> -->
+            <div class="logo-rocket-div">
+                <a href="#" class="logo-rocket">🚀</a>
+            </div>
             <nav class="navigation-menu">
                 <ul class="items">
                     <li class="item 1 H"><a href="#">Hire me.</a></li>
-                    <li class="item 2 H"><a href="#">Download CV.</a></li>
+                    <li class="item 2 H"><a href="/CV/SEO-CV.pdf" download>Download CV.</a></li>
                     <li class="item 3 H"><a href="#">My Work.</a></li>
                     <li class="item 4 I">
                         <a  href="https://www.insta gram.com/maarcinl/" target="_blank"><img src="media/insta-logo.svg" alt="Instagram Icon"></a>
@@ -44,9 +47,29 @@
                 <h2>I <span>transform</span> online landscapes into <span>thriving ecosystems</span> through the power of <span>SEO</span></h2>
                 <p>Technical & on-page search engine optimisation</p>
             </div>
-            <div class="banner-image">
-                <!-- <img class="ML" src="media/MarcinPicLol.jpg" alt="Marcin Lewicki"> -->
-            </div>
+            <form class="contact-form-div" action="action_page.php">
+                <div class="first-and-last-name">
+                    <div class="ffname">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    </div>
+                    <div class="llname">
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    </div>
+                </div>
+                <div class="email-and-message">
+                    <label for="lname">Email Address</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your email address..">
+                
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="How can I help you?"></textarea>
+                
+                    <input class="contact-form-button" type="submit" value="Submit">
+                </div>
+                
+            </form>
+
         </div>
         <!-- Testimonials block -->
         <div class="testimonialsBannerMain">
